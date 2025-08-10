@@ -20,7 +20,7 @@ import useSuggestedUser from './components/useSuggestedUser';
 
 const App = () => {
   const location = useLocation();
-  const fetchSuggesteduser = useSuggestedUser();
+  const {fetchSuggesteduser} = useSuggestedUser();
   const noLayoutRoutes = ['/login', '/register'];
   const [loading, setLoading] = useState(true);
   const { user } = useSelector(store => store.auth);

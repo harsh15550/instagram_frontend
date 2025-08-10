@@ -11,7 +11,7 @@ const useSuggestedUser = () => {
             const res = await axios.get("https://instagram-clone-5r4x.onrender.com/api/user/suggested", {
                 withCredentials: true
             });
-            
+
             if (res.data.success) {
                 dispatch(setSuggestedUser(res.data.suggestedUsers));
             }
